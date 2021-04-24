@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="dark">
+    <select name="select" id="lala"  onchange="javascript:color();">
+<option value="black">PHP</option>
+<option value="red">JS</option>
+<option value="white">HTML</option>
+<option value="orange">CSS</option>
+    </select>
+
+
+    <script>
+     var   x=document.getElementById("dark");
+    function color(){
+     dy=document.getElementById("lala");
+   var y=dy.value; 
+        x.style.backgroundColor = y;
+    };
+
+    color();
+    </script>
+</body>
+</html>
